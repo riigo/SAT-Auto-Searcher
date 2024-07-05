@@ -9,7 +9,7 @@ test_dates[4] = "March 8, 2025 — Saturday"
 test_dates[5] = "May 3, 2025 — Saturday"
 test_dates[6] = "June 7, 2025 — Saturday"
 
-test_date = test_dates[6]
+test_date = test_dates[6]       #Look at the array of dates above and type the number that corresponds to the date you want \\ test_date = test_dates[0] will search for 'August 24, 2024 - Saturday'
 zip_code = "12345"              #Enter your zip code!
 distance = "50 miles"           #All Options: '10 miles', '25 miles', '50 miles', '100 miles', must be written exact
 
