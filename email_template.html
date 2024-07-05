@@ -1,0 +1,76 @@
+<!--This is the html/formatting that is used for the email that sends when locations are found.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Test Centers</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }}
+        .container {{
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }}
+        h1 {{
+            color: #0073e6;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }}
+        p {{
+            margin: 0 0 15px 0;
+            font-size: 16px;
+        }}
+        .test-center {{
+            background: #f9f9f9;
+            border-left: 4px solid #0073e6;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }}
+        .test-center a {{
+            color: #0073e6;
+            text-decoration: none;
+        }}
+        .test-center a:hover {{
+            text-decoration: underline;
+        }}
+        .footer {{
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }}
+        .footer a {{
+            color: #0073e6;
+            text-decoration: none;
+        }}
+        .footer a:hover {{
+            text-decoration: underline;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SAT Test Centers Found</h1>
+        <p><strong>Date:</strong> {test_date}<br>
+           <strong>Distance:</strong> {distance}</p>
+        <div class="test-centers">
+            {test_centers}
+        </div>
+        <div class="footer">
+            <p>Register at: <a href="https://satreg.collegeboard.org/register/testCenter" target="_blank">SAT Test Center Registration</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
